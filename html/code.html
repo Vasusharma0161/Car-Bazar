@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script >
+		$(document).ready(function(){
+		$(".button3").click(function(){
+	          var x=$("#num").val();
+	          x++;
+	          $("#num").val(x);
+    });
+	$(".button").click(function(){
+			var x=$("#num").val();
+			x--;
+			$("#num").val(x);
+		});
+		$(".button2").click(function(){
+          var x=$("#num").val();
+          x=0;
+          $("#num").val(x);
+		});
+});
+</script>
+		
+	<style>
+		.button{
+			background-color: red;
+			border: white;
+			padding:20px 15px;
+		}
+		.button2{
+			
+			border: white;
+			padding:20px 15px;
+			text-decoration-color: white;
+		}
+		.button3{
+			background-color: green;
+			border: white;
+			padding:20px 15px;
+		}
+		body{
+			background-color: grey;
+		}
+		div{
+         text-align: center;
+         
+		}
+	</style>
+</head>
+<body >
+	<h1 align="center" id="sh">COUNTER</h1>
+	
+	<div id="sh1">
+		<input type="text" value="0"  id="num" style="border: none;background-color: grey;text-align: center;"><br><br>
+	<button class="button" align="center">-</button>
+	<button class="button2" align="center">RESET</button>
+	<button class="button3" align="center">+</button>
+	
+</div>
+
+</body>
+</html>
